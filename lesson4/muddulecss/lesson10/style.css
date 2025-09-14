@@ -1,0 +1,87 @@
+body {
+
+    font-family: 'Arial', sans-serif;
+
+    background-color: #001f3f;
+
+    color: #DDDDDD;
+
+}
+
+h1 {
+
+    color: #39BAFF;
+
+}
+
+/* atribute selector */
+a {
+
+    color: #ff3985;
+
+    text-decoration: none;
+
+}
+
+a:hover {
+
+    color: #07706b;
+
+}
+
+:nth-child
+ul>li {
+
+    font-weight: bold;
+
+}
+
+/* this is an  example of sibling selctor */
+h1+p {
+
+    background-color: #163D57;
+
+    padding: 10px;
+
+    border-radius: 5px;
+
+}
+
+/* hover psudio class  */
+ul li:hover {
+
+    color: #be1610;
+
+}
+/* this is an example of nth child psiudo class */
+ul li:nth-child(3) {
+
+    background-color: #30195c;
+
+}
+/* not psiudo class */
+p:not(:first-of-type) {
+
+    text-decoration: underline;
+
+}
+/* before psuido element */
+ul li::before {
+
+    content: "🚀 ";
+
+}
+/* afeter psuido element */
+a::after {
+
+    content: " 🛰️";
+
+}
+/* fist letter psuido element */
+p::first-letter {
+
+    font-size: 200%;
+
+    color: #FF7B72;
+
+}
