@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <style>
+        html { 
+
+font-size: 20px;
+
+background-color:black ;
+
+color:white;
+
+font-family:arial;
+
+}
+
+#test {
+
+background-color: aqua;
+
+color: black;
+
+font-size: 25px;
+
+text-align:justify;
+
+}
+        body {
+
+            height: 2000px;
+
+            /* make the page tall so we can scroll */
+
+        }
+
+        div {
+
+            /* normal style followed for div box */
+
+            margin: 20px 0;
+
+            padding: 10px;
+
+            border: 3px solid #73AD21;
+
+            width: 250px;
+
+            background: lightyellow;
+
+        }
+
+        .relative {
+
+            position: relative;
+
+         /* can slide abit left,right,up or down */
+
+            left: 30px;
+
+        }
+
+        .absolute {
+
+            position: absolute;
+
+/* One box floating at exact coordinates (ignores flow). it is placed at exact coordinates (top, left, right, bottom). The element will be placed exactly 30px from the left and 50px from the top of its container (or the whole page). */
+
+            top: 200px;
+
+            left: 30px;
+
+            background: lightcoral;
+
+        }
+
+        .fixed {
+
+            position: fixed;
+
+            /* Try Scroll horizontal and vertical, the text appear as fixed in its place- it won't move. */
+
+            top: 10px;
+
+            right: 10px;
+
+            background: lightblue;
+
+        }
+
+        .static {
+
+            position: static;
+
+/* cannot move it using top, left, etc. top: 10px; */
+
+            background: lightgreen;
+
+        }
+
+        .sticky {
+
+            position: sticky;
+
+            /* scroll until the box touches the top, then it will “stick” there until page area ends. */
+
+            top: 0;
+
+            background: orange;
+
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <h1 style="color: blue;">NAMES OF ANIMALS</h1>
+
+    <p>these animals are wild animals</p>
+
+    <div class="relative" style="color:green;">A Lion</div>
+
+    <div class="absolute">A tiger</div>
+
+    <div class="fixed">A snake</div>
+
+    <div class="static">A zebra</div>
+
+    <div class="sticky">An elephant</div>
+
+    <p style="margin-top:1000px;">A giraf</p>
+
+</body>
+
+</html>
