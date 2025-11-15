@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <h1>evaluete</h1>
+    <p>click the buttun to evaluete js code</p>
+    <button onclick="myfunctions()">click</button>
+    <p id="result"></p>
+    <script>
+      var x = 10;
+      var y = 20;
+      var a = eval("x + y") + "<br>";
+      var b = eval("2*2") + "<br>";
+      var c = eval("y-x") + "<br>";
+      var d = a + b + c;
+      document.getElementById("result").innerHTML = d;
+    </script>
+  </body>
+</html>
