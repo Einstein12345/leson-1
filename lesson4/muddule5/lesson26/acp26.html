@@ -1,3 +1,36 @@
 <!-- Class in JS
 Outline:
 In this project, you will be creating a class with a static method, inheriting the class and displaying the properties of class by accessing the methods. -->
+<!DOCTYPE html>
+<html>
+  <body>
+    <h2>this is my best friend</h2>
+    <p id="hello"></p>
+    <p id="i am "></p>
+    <p id="i come from india"></p>
+    <script>
+      class Student {
+        constructor(name) {
+          this.studentname = name;
+        }
+        static hello() {
+          // static method
+          return "Hello!!";
+        }
+        static welcome(x) {
+          return " you are my best friend " + x.studentname;
+        }
+        hi() {
+          return " hi " + this.studentname;
+        }
+      }
+      myname = new Student("gurtege");
+      //Call 'hello()' on the class Student and NOT on the 'myname' object because 'hello()' is a static method it cannot access object
+      document.getElementById("hello").innerHTML = Student.hello();
+      // Call 'hi()' on the 'myname' object:
+      document.getElementById("i am ").innerHTML = myname.hi();
+      // Call 'welcome()' can access the object since parameter is passed
+      document.getElementById("i come from india").innerHTML = Student.welcome(myname);
+    </script>
+  </body>
+</html>
