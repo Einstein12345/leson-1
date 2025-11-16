@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <h1>js error handling</h1>
+    <p>this is an example to show how to use catch to display an error</p>
+<p id="errormessage"></p>
+    <script>
+        // function addelot(a){
+        //     return a
+        // }
+     try{
+        addelot("Welcome")
+     }
+     catch(error){
+document.getElementById("errormessage").innerHTML=error.message
+     }
+    </script>
+  </body>
+</html>
