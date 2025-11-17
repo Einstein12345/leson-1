@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <body style="background-color: red">
+    <h1 style="color: yellow">the rechest people in the world</h1>
+    <p>this is are some examples of the rechest people in the world</p>
+    <h3>
+      Elon Musk: CEO of Tesla and SpaceX; also owns X (formerly Twitter) and is
+      involved in projects like Neuralink and The Boring Company.
+    </h3>
+    <h3>
+      Larry Ellison: Co-founder of Oracle, he is also the chairman and chief
+      technology officer of the company.
+    </h3>
+    <h3>
+      Jeff Bezos: Founder and former CEO of Amazon; also owns the space company
+      Blue Origin and The Washington Post .
+    </h3>
+    <h3>
+      Mark Zuckerberg: CEO of Meta Platforms, which owns Facebook, Instagram,
+      and WhatsApp.
+    </h3>
+
+    <p id="errormessage"></p>
+    <script>
+      // function addelot(a){
+      //     return a
+      // }
+      try {
+        addelot("Bernard Arnault");
+      } catch (error) {
+        document.getElementById("errormessage").innerHTML = error.message;
+      }
+    </script>
+  </body>
+</html>
