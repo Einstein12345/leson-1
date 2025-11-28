@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script>
+      function validateForm() {
+        var x = document.forms["myForm"]["ffavourite car"].value;
+        if (x == "") {
+          alert("favourite car must be filled out");
+          return false;
+        } else document.write("favourite car submitted");
+      }
+    </script>
+  </head>
+  <body>
+    <form name="myForm" onsubmit="validateForm()">
+      favourite car: <input type="text" name="ffavourite car" />
+      <input type="submit" value="Submit" />
+      <p id="message"></p>
+    </form>
+  </body>
+</html>
